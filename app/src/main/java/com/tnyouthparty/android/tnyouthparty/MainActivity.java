@@ -19,7 +19,6 @@ import com.tnyouthparty.android.tnyouthparty.fragments.WebPageFragment;
 
 public class MainActivity extends AppCompatActivity {
 
-    private FrameLayout mainFrame;
     FragmentManager fragmentManager;
     FragmentTransaction fragmentTransaction;
     Fragment selectedFragment, webFragment, fbFragment, youtubeFragment;
@@ -55,7 +54,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //mainFrame = findViewById(R.id.main_frame);
         fragmentManager = getSupportFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
 
